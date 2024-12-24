@@ -5,21 +5,18 @@ let computerScore = 0;
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber === 0) {
-        // return 'rock';
-        console.log('rock')
+        return 'Computer Choice : rock';
     } else if (randomNumber === 1) {
-        // return 'paper';
-        console.log('paper')
+        return 'Computer Choice : paper';
     } else {
-        // return 'scissors';
-        console.log('scissors')
+        return 'Computer Choice : scissors';
     }
 }
 
 // function to get human choice.
 function getHumanChoice() {
     const humanChoice = prompt('Enter your choice: rock, paper or scissors');
-    console.log('human choice: ', humanChoice)
+    return 'human choice', humanChoice
 }
 
 // function to play the game.
@@ -43,11 +40,13 @@ function playRound(humanChoice, computerChoice) {
 // function playGame()
 function playGame() {
     const humanSelection = getHumanChoice();
+    console.log(humanSelection)
     const computerSelection = getComputerChoice();
+    console.log(computerSelection)
 
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
+    console.log(playRound(humanSelection, computerSelection));
+    console.log(playRound(humanSelection, computerSelection));
+    console.log(playRound(humanSelection, computerSelection));
+    console.log(playRound(humanSelection, computerSelection));
+    console.log(playRound(humanSelection, computerSelection));
 }
