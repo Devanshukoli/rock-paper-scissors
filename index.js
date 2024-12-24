@@ -45,8 +45,9 @@ function playGame() {
     console.log(computerSelection)
 
     console.log(playRound(humanSelection, computerSelection));
-    console.log(playRound(humanSelection, computerSelection));
-    console.log(playRound(humanSelection, computerSelection));
-    console.log(playRound(humanSelection, computerSelection));
-    console.log(playRound(humanSelection, computerSelection));
 }
+
+playGame()
+playGame()
+playGame()
+playGame()
