@@ -37,10 +37,17 @@ function playRound(humanChoice, computerChoice) {
         return 'You win!';
     } else {
         return 'You lose!';
-    }   
+    }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+// function playGame()
+function playGame() {
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+}
