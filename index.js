@@ -1,7 +1,33 @@
 let humanScore = 0;
 let computerScore = 0;
 
-// function
+// function to get human choice.
+function getHumanChoice() {
+    let humanChoice = ''
+    const rockButton = document.getElementById('rock')
+    const paperButton = document.getElementById('paper')
+    const scissorsButton = document.getElementById('scissors')
+    
+    // Add a event-listner to buttons.
+    rockButton.addEventListener('click', () => {
+        console.log('rock button clicked')
+        return humanChoice = 'rock';
+    })
+    
+    paperButton.addEventListener('click', () => {
+        console.log('paper button clicked')
+        return humanChoice = 'paper';
+    })
+    
+    scissorsButton.addEventListener('click', () => {
+        console.log('scissors button clicked')
+        return humanChoice = 'scissors';
+    })
+
+}
+
+console.log('humanchoice---->', getHumanChoice())
+//  function
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber === 0) {
@@ -13,13 +39,7 @@ function getComputerChoice() {
     }
 }
 
-// function to get human choice.
-function getHumanChoice() {
-    const humanChoice = prompt('Enter your choice: rock, paper or scissors');
-    return 'human choice', humanChoice
-}
-
-// function to play the game.
+// // function to play the game.
 function playRound(humanChoice, computerChoice) {
     // Now making this args. case insensitive.
     humanChoice = humanChoice.toLowerCase();
