@@ -14,46 +14,76 @@
 
 <body>
   <header class="navbar">
-    <div class="header-logo">
-      Rock🪨 Paper📃 Sicssors✂️
-    </div>
+    <a id="logo" href="/" class="header-logo">
+      <div class="icon">🪨 📃 ✂️</div>
+      <h1 class="text">
+        <div class="top">
+          Rock-Paper-Sicssors
+        </div>
+      </h1>
 
-    <ul class="header-links">
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact Us</li>
-    </ul>
+    </a>
+
+    <nav>
+      <div class="accountButtonAndMenu">
+        <div class="menu">
+          <div class="spacer"></div>
+          <label for="toggle-menu">
+            <i class="fas fa-bars"></i>
+          </label>
+          <div class="items">
+            <a href="/account"></a>
+            <a href="/profile/{user}">Public Profile</a>
+            <a href="/account-settings">Account Settings</a>
+            <button class="signOut">Sign Out</button>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <div class="heading">
-    <h1>Rock Paper Scissors</h1>
-  </div>
+  <main>
 
-  <div class="humanChoice">
-    <section>
-      <h2>Click for your choice:</h2>
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
-      <script src='./index.js'></script>
-    </section>
-  </div>
+    <div class="heading">
+      <h1>Rock Paper Scissors</h1>
+    </div>
+
+    <div class="humanChoice">
+      <section>
+        <h2>Click for your choice:</h2>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+        <script src='./index.js'></script>
+      </section>
+    </div>
 
 
-  <div class="computerChoice">
-    <section>
-      <h2>Computer's choice:</h2>
-      <p id="computerChoice"></p>
-    </section>
-  </div>
+    <div class="computerChoice">
+      <section>
+        <h2>Computer's choice:</h2>
+        <p id="computerChoice"></p>
+      </section>
+    </div>
 
-  <div class="scoreCard">
-    <section>
-      <h2>Score:</h2>
-      <p id="score"></p>
-    </section>
-  </div>
+    <div class="scoreCard">
+      <section>
+        <h2>Score:</h2>
+        <p id="score"></p>
+      </section>
+    </div>
+  </main>
 
+  <footer>
+    <div class="foot">
+      <a href="https://github.com/devanshukoli/rock-paper-scissors" rel="noreferrer noopener" target="_blank">
+        <div class="text">GitHub</div>
+      </a>
+      <a href="https://x.com/devanshukoli" rel="noreferrer noopener" target="_blank">
+        <div class="text">Twitter</div>
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>

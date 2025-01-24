@@ -11,6 +11,11 @@
     background-color: #1f2937;
 }
 
+.navbar > a {
+    text-decoration: none;
+    display: grid;
+}
+
 .header-logo {
     font-size: 24px;
     color: #f9faf8;
